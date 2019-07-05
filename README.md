@@ -24,6 +24,8 @@ Our current best-practice process(s)
 - TODOs should not be added unless associated with an issue
 - Code quality guidelines should be established and enforced prior to merge
 - Change log entries for changes should be added at the time the change is applied
+- Pull requests are compiled and tested prior to merge
+- Pull requests will be assigned/commented on to/by a maintainer within a week of filing
 
 ## Documentation
 
@@ -38,8 +40,9 @@ All projects have some basic documentation
 - A Change log detailing the changes applied within each release of the project
 - If breaking changes have been made in the project's history, information on how to migrate from older to newer versions
 
-## Deploying
+## Releases
 
+- Projects follow semantic versioning: no breaking changes are made except across major release numbers, and with prior warning/dcoumentation via deprecation or appropriate mechanisms
 - Library releases should include source artifacts
 
 ## Communication
