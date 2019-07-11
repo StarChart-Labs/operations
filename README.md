@@ -1,14 +1,14 @@
 # Operations
 
-* This document is still in draft stage! *
+*This document is still in draft stage!*
 
 Documentation and common resources for development processes
 
 # How Does This Work?
 
-StarChart Labs is about creating a consistent process around development, and making it easier to "do things right". For us, "right" means libraries and tools that are easy to consume, stable, and make it easier to focus on whatever the primary aim of the project it's being used in is. Working towards this goal can be as simple as ensuring tests are written, or as complex as standardizing build and deployment processes.
+StarChart Labs is about creating a consistent process around development, and making it easier to "do things right". For us, "right" means libraries and tools that are easy to consume, stable, and make it easier to focus on the primary aim of the consuming project. Working towards this goal can be as simple as ensuring tests are written, or as complex as standardizing build and deployment processes.
 
-Like many organizations, StarChart Labs is constantly tweaking how we operate, and rolling out changes we find helpful across our wide range of projects. Part of the process is also identifying the maturity of a project, and when it's worth the effort to apply certain practices. We are also constantly trying to find ways to automate standards and checks, to improve consistency and let the humans get on with human work, instead of being bogged down in repetive work.
+Like many organizations, StarChart Labs is constantly tweaking how we operate, and rolling out changes we find helpful across our wide range of projects. Part of the process is also identifying the maturity of a project, and when it's worth the effort to apply certain practices. We are constantly trying to find ways to automate standards and checks, to improve consistency and let the humans get on with human work, instead of being bogged down in repetative work.
 
 # Lab Procedure
 
@@ -36,13 +36,14 @@ All projects have some basic documentation
   - Information on licensing, including steps required by clients to use the library or it's source
   - Information on reporting vulnerabilities
 - Guidelines for contributors on setting up for development and requirements for pull requests
+- Guidelines for collaborators on handling pull requests, interacting with the community, and releasing the project
 - A code of conduct which outlines what community members can expect and establishes an expectation of respect
 - A Change log detailing the changes applied within each release of the project
 - If breaking changes have been made in the project's history, information on how to migrate from older to newer versions
 
 ## Releases
 
-- Projects follow semantic versioning: no breaking changes are made except across major release numbers, and with prior warning/dcoumentation via deprecation or appropriate mechanisms
+- Projects follow semantic versioning: no breaking changes are made except across major release numbers, and with prior warning/documentation via deprecation or appropriate mechanisms
 - Library releases should include source artifacts
 
 ## Communication
@@ -54,7 +55,18 @@ All projects have some basic documentation
 
 TODO
 
+## Documentation
+
+- Files at the root of a project's repository
+  - README
+  - CHANGE_LOG
+- Files in a `docs` folder
+  - CONTRIBUTING
+    - Details expectations for contributors and how to setup development
+  - COLLABORATORS
+    - Details information such as handling contributions and releasing the projects
+  - Supporting documentation linked from the README
+
 # Looking Forward: What Can We Improve
 
 TODO
-
