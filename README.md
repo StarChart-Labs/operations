@@ -16,16 +16,17 @@ Our current best-practice process(s)
 
 ## Writing Code
 
-- Pull requests should be small and focused to specific issues or improvements
-- Tests should be present for new functionality, and to ensure fixed bugs do not regress
 - Source files should follow consistent formatting pattern(s)
-- APIs meant for external consumption should be documented
-- If breaking changes are made, the old and new methodologies should both exist at some point in time, and deprecation documentation on the old method should include details on how to migrate
-- TODOs should not be added unless associated with an issue
-- Code quality guidelines should be established and enforced prior to merge
-- Change log entries for changes should be added at the time the change is applied
-- Pull requests are compiled and tested prior to merge
+- Source files should have consistent and accurate copyright statements present
+- Pull requests should be small and focused to specific issues or improvements
 - Pull requests will be assigned/commented on to/by a maintainer within a week of filing
+- Pull requests are compiled and tested prior to merge
+- TODOs should not be added unless associated with an issue
+- APIs meant for external consumption should be documented
+- Code quality guidelines should be established and enforced prior to merge
+- Tests should be present for new functionality, and to ensure fixed bugs do not regress
+- Change log entries for changes should be added at the time the change is applied
+- If breaking changes are made, the old and new methodologies should both exist at some point in time, and deprecation documentation on the old method should include details on how to migrate
 
 ## Documentation
 
@@ -55,6 +56,18 @@ All projects have some basic documentation
 
 TODO
 
+## Writing Code
+
+- Source file formatting, consistency, and copyright guidelines are enforced via [Checkstyle](https://checkstyle.sourceforge.io/)
+- Size of pull requests is monitored by maintainers
+- Pull Requests are built via GitHub CI/CD
+- TODOs are audited by maintainers
+- External API documentation is audited by maintainers
+- Code quality guidelines are audited by maintainers
+- Test coverage is monitored via [CodeCov](https://codecov.io/)
+- Change log entries for production changes are enforced via [Chronicler](https://chronicler.starchartlabs.org/)
+- Breaking change documentation is audited by maintainers
+
 ## Documentation
 
 - Files at the root of a project's repository
@@ -70,3 +83,13 @@ TODO
 # Looking Forward: What Can We Improve
 
 TODO
+
+## Writing Code
+
+Several steps of the code review/acceptance process could be better automated to take burden off of maintainers
+
+- Size of pull requests could be automatically indicated with labels or similar, perhaps via a GitHub Action
+- TODOs could be detected and commented on by an automated system, such as a GitHub Action
+- External API documentation could be verified as present by automation
+- Code quality guidelines could be automated via spotbugs as a build failure, and later as automated pull request comments
+- Breaking change documentation could be detected for incompatible API changes in a way similar to Chronicler for some langauges
